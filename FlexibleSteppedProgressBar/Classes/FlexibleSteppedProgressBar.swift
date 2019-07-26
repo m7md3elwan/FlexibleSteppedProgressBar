@@ -752,7 +752,7 @@ import CoreGraphics
             
             
             
-            if(self.currentIndex != selectedIndex) || selectedIndex == 0 {
+            if ((self.currentIndex != selectedIndex) || (self.currentIndex == 0)) {
                 if let canSelect = self.delegate?.progressBar?(self, canSelectItemAtIndex: selectedIndex) {
                     if (canSelect) {
                         if (selectedIndex > completedTillIndex) {
